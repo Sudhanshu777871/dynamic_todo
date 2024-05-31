@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #1B4242,
+            #092635);
+    color: white;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#headingStyle {
+    text-align: center;
+    margin: 10px 0px;
+    background: linear-gradient(to right, #f32170,
+            #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bolder;
+}
+
+.maincontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.pendingAndFormDiv {
+    box-shadow: 4px 5px 2px gray;
+    padding: 20px 10px;
+    border-radius: 5px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+}
+
+#addTaskImg {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.maincontainer>div {
+    width: 25%;
+}
+
+.modalContent>input,
+.modalContent>textarea {
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+
+.taskTitle {
+    font-size: 18px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(228, 223, 223);
+    margin-bottom: 4px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 5px;
+}
+
+.manageOverflow {
+
+    overflow-y: scroll;
+    height: 200px;
+    height: 370px;
+}
+
+/* width */
+.manageOverflow::-webkit-scrollbar {
+    width: 1px;
+
+}
+
+.descriptionStyle {
+    font-size: 13px;
+}
+
+.actionButtonStyle {
+    padding: 4px 10px;
+    margin: auto;
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 5px;
+}
+
+.actionButtonStyle:hover {
+    background-color: rgb(185, 67, 25);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}
+
+
+.moreStyleOnCompletedTaskDetails {
+    margin: -10px 0px 3px 0px;
+    color: orangered;
+}
+
+/* css for media query */
+
+@media only screen and (max-width: 1100px) {
+    .maincontainer>div {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .maincontainer>div:last-child {
+        margin-bottom: 50px;
+    }
+}
